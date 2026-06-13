@@ -1,5 +1,5 @@
-import apiClient from './client';
-import type { GitHubUserProfile, GitHubRepoPage } from '../types/github';
+import apiClient from './client.js';
+import type { GitHubUserProfile, GitHubRepoPage } from '../types/github.js';
 
 interface ApiEnvelope<T> {
   success: boolean;

@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useDebounce } from './useDebounce';
-import { fetchUserProfile, fetchUserRepos } from '../api/github';
-import type { TransformedRepo, SortOption, ApiError } from '../types/github';
+import { useDebounce } from './useDebounce.js';
+import { fetchUserProfile, fetchUserRepos } from '../api/github.js';
+import type { TransformedRepo, SortOption, ApiError } from '../types/github.js';
 
 export function useGitHubSearch() {
   // Raw user input — preserved casing for display
